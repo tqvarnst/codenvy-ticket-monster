@@ -1,0 +1,37 @@
+{
+    "project": {
+        "attributes": {
+            "language": [
+                "java"
+            ]
+        },
+        "builders": {
+            "default": "maven"
+        },
+        "name": "codenvy-ticket-monster",
+        "runners": {
+            "configs": {
+                "system:/java/web/jboss7": {
+                    "options": {},
+                    "ram": 0,
+                    "variables": {}
+                }
+            },
+            "default": "system:/java/web/jboss7"
+        },
+        "type": "maven",
+        "visibility": "public"
+    },
+    "source": {
+        "project": {
+            "location": "https://github.com/tqvarnst/codenvy-ticket-monster.git",
+            "parameters": {
+                "branch": "master"
+            },
+            "type": "git"
+        },
+        "runners": {}
+    },
+    "v": "2.0",
+    "variables": []
+}
